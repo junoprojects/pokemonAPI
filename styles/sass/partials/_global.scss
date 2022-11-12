@@ -1,12 +1,17 @@
 @use "./variables";
 
 .wrapper {
-  width: 90%; 
+  max-width: 1300px;
   margin: 0 auto;
-  max-width: 1200px;
+  width: 85%;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+h1, h2, h3, div, p, ul {
+  margin: 0; 
+  padding: 0
 }
