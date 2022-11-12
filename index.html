@@ -5,13 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 2</title>
+
+  <!-- CSS style sheet -->
   <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Manrope:wght@300;400;700&family=Marhey:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome icons -->
+  <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <h1>setup</h1>
+
+  <header>
+    <div class="headerContainer wrapper">
+      <h1>
+        Who's that
+      </h1>
+
+      <img src="./assests/pokemon-banner.svg.png" alt="Banner that spells the word Pokemon">
 
 
+      <a href="#main"><i class="fa-solid fa-chevron-down arrow"></i></a>
+    </div>
+  </header> 
+
+
+  <main id="main">
+
+    <div class="mainContainer wrapper">
+
+      <div class="flexContainer">
+        <!-- old: pokemonContainer ^ -->
+
+        <div class="pokeballContainer">
+          <button id="pokeballClick">
+            <img src="./assests/pokeball-image.png" alt="" class="An image of a Pokeball">
+          </button>    
+        </div>
+
+        <div class="pokemonContainer">
+          <!-- old: pokemon ^ -->
+          <ul>
+            <li class="clickStart">
+              <h2>Click the pokeball</h2>
+              <h3>to find pokemon!</h3>
+            </li>
+
+            <li>
+              <img src="./assests/pikachu-image.png" alt="An image of pikachu jumping up in excitement">
+            </li>
+          </ul>
+        </div>
+
+      </div> <!-- END flexContainer -->
+
+    </div> <!-- END .mainContainer .wrapper -->
+  </main>
 
 
   <!-- JavaScript link  -->
