@@ -4,6 +4,12 @@
 @use "./partials/variables" as v;
 @use "./partials/typography";
 
+// HEADER SECTION
+@use "./partials/sections/header";
+
+// MAIN SECTION
+@use "./partials/sections/main";
+
 
 // MEDIA QUERIES 
-@use "./partials/mediaQs";
+// @use "./partials/mediaQs";

@@ -1,14 +1,14 @@
 @use "./variables" as v;
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 85%;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 60%;
+  // display: block;
 }
 
 h1, h2, h3, div, p, ul {
