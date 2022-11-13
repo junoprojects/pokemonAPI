@@ -1,9 +1,29 @@
-@use "./variables";
+@use "./variables" as v; 
 
+// Typography
 html {
-  font-size: 125%;
+  font-size: 62.5%;
 }
 
-// margin padding 0
-// list styles
-// text decoration 
+body {
+  font-family: v.$marhey;
+  font-size: 1.6rem;
+}
+
+.headerContainer {
+  color: v.$blue;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-align: center;
+  h1 {
+    text-shadow: -4px 1px 0px v.$yellow;
+  }
+  .arrow {
+    font-size: 4rem;
+  }
+}
+
+.clickPokeball {
+  text-align: center;
+}

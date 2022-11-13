@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as v;
 
 .wrapper {
   max-width: 1300px;
@@ -14,4 +14,13 @@ img {
 h1, h2, h3, div, p, ul {
   margin: 0; 
   padding: 0
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
