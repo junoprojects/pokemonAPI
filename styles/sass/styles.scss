@@ -1,6 +1,9 @@
+// SETUP AND GLOABL PARTIALS 
 @use "./partials/setup";
-@use "./partials/variables";
-@use "./partials/typography";
 @use "./partials/global";
+@use "./partials/variables" as v;
+@use "./partials/typography";
 
+
+// MEDIA QUERIES 
 @use "./partials/mediaQs";
