@@ -8,10 +8,10 @@ pokeApp.getRandomNumber = () => {
     // Create event listener where a random number is generated when the button is clicked
     document.querySelector("#clickPokeball").addEventListener("click", function() {
         pokeApp.pokeNumber = Math.floor((Math.random() * 905) + 1);
-        // pokeApp.pokeNumber = 35;
-
         // Combine the existing URL with the randomly generated number
         const newPokeUrl = pokeUrl + pokeApp.pokeNumber;
+
+        // document.querySelector('.landingPage').style.display = 'none';
 
     // Fetch the URL specific to the Pokemon whose index number corresponds with the randomly generated number
     fetch(newPokeUrl)

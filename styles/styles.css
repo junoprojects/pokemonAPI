@@ -249,7 +249,7 @@ html {
 }
 
 img {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 h1, h2, h3, div, p, ul {
@@ -288,10 +288,6 @@ body {
 }
 .headerContainer .arrow {
   font-size: 4rem;
-}
-
-img {
-  max-width: 65%;
 }
 
 header {
