@@ -5,10 +5,14 @@
 @use "./partials/typography";
 
 // HEADER SECTION
-@use "./partials/sections/header";
+@use "./partials/header/header";
 
 // MAIN SECTION
-@use "./partials/sections/main";
+@use "./partials/main/mainGeneral";
+@use './partials/main/containers';
+@use "./partials/main/pokeball";
+@use "./partials/main/pikachuLandingPage";
+@use "./partials/main/randomPokemon";
 
 
 // MEDIA QUERIES 
