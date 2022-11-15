@@ -3,24 +3,24 @@ const pokeApp = {}
 const pokeUrl = "https://pokeapi.co/api/v2/pokemon/";
 
 pokeApp.pokeTypeColor = {
-    normal: "#A8A77A",
-    fire: "#EE8130",
-    water: "#6390F0",
-    electric: "#F7D02C",
-    grass: "#7AC74C",
-    ice: "#96D9D6",
-    fighting: "#C22E28",
-    poison: "#A33EA1",
-    ground: "#E2BF65",
-    flying: "#A98FF3",
-    psychic: "#F95587",
-    bug: "#A6B91A",
-    rock: "#B6A136",
-    ghost: "#735797",
-    dragon: "#6F35FC",
-    dark: "#705746",
-    steel: "#B7B7CE",
-    fairy: "#D685AD"
+    normal: "rgba(146, 157, 163, 0.6)",
+    fire: "rgba(255, 157, 85, 0.7)",
+    water: "rgba(102, 145, 234, 0.6)",
+    electric: "rgba(244, 210, 60, 0.7)",
+    grass: "rgba(99, 188, 90, 0.6)",
+    ice: "rgba(115, 206, 192, 0.6)",
+    fighting: "rgba(206, 65, 107, 0.6)",
+    poison: "rgba(170, 107, 200, 0.7)",
+    ground: "rgba(217, 120, 69, 0.6)",
+    flying: "rgba(143, 169, 222, 0.7)",
+    psychic: "rgba(250, 113, 121, 0.6)",
+    bug: "rgba(145, 193, 47, 0.7)",
+    rock: "rgba(197, 183, 140, 0.7)",
+    ghost: "rgba(82, 105, 173, 0.6)",
+    dragon: "rgba(111, 53, 252, 0.5)",
+    dark: "rgba(90, 84, 101, 0.5)",
+    steel: "rgba(90, 142, 162, 0.5)",
+    fairy: "rgba(236, 143, 230, 0.7)"
 }
 
 pokeApp.getRandomPokemon = () => {
@@ -43,7 +43,12 @@ pokeApp.getRandomPokemon = () => {
     .then(data => {
         console.log(data)
 
+        // Remove pikachu display
         document.querySelector(".landingPage").style.display = "none";
+
+        // Add a border to new pokemon display
+        document.querySelector(".pokemonInfo").style.border = "2px solid #58585A";
+        document.querySelector(".nameAndIndex").style.border = "1.5px solid #58585A";
 
         // Append the Pokemon name in the h2 element with the .pokemonName class
         const pokeName = document.querySelector(".pokemonName");
@@ -83,7 +88,7 @@ pokeApp.getRandomPokemon = () => {
             if (type == primType.textContent) {
                 primType.style.background = pokeApp.pokeTypeColor[type];
                 pokeApp.primBackground = primType.style.background;
-                pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, white)`;
+                pokeInfo.style.background = `linear-gradient(to right, #FBFBFB, ${pokeApp.primBackground})`;
 
             } else if (type == secondType.textContent) {
                 secondType.style.background = pokeApp.pokeTypeColor[type];
@@ -91,9 +96,10 @@ pokeApp.getRandomPokemon = () => {
             }
 
             if (data.types.length > 1) {
-                pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, ${pokeApp.secondBackground})`;
+                pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, white, ${pokeApp.secondBackground})`;
             }
         }
+        
         
 
         // Append the Pokemon sprite in the img element
