@@ -4,8 +4,29 @@
 // PIKACHU STYLING
 // =====================
 
+.landingPage {
+  border-radius: 4.1rem;
+  padding: 2rem 4rem;
+  background-image: linear-gradient(to right, #FBFBFB, rgba(244, 210, 60, 0.7));
+  border: 2px solid #58585A;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .pikachuText {
-  transform: translateY(40px);
-  margin-left: 10rem;
-  padding-right: 3rem;
+  background-color: white;
+  border-radius: 1.7rem;
+  padding: 1.5rem 2rem 1rem;
+  border: 1.5px solid #58585A;
+
+}
+
+.pikachuImg {
+  // max-width: 70%;
+  margin-left: 5.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
