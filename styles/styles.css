@@ -249,7 +249,7 @@ html {
 }
 
 img {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 h1, h2, h3, div, p, ul {
@@ -288,10 +288,6 @@ body {
 }
 .headerContainer .arrow {
   font-size: 4rem;
-}
-
-img {
-  max-width: 65%;
 }
 
 header {
@@ -361,7 +357,7 @@ main .mainContainer {
 }
 
 .flexContainer {
-  min-height: 55vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,8 +373,8 @@ main .mainContainer {
   width: 50%;
 }
 .flexContainer .pokemonContainer {
-  min-height: 50vh;
-  padding-left: 7rem;
+  padding-left: 2rem;
+  padding-right: 6rem;
 }
 
 #clickPokeball {
@@ -398,4 +394,49 @@ main .mainContainer {
           transform: translateY(40px);
   margin-left: 10rem;
   padding-right: 3rem;
+}
+
+.pokemonInfo {
+  border-radius: 4.1rem;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.nameAndIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 1.7rem;
+  padding: 0.8rem 0 0.7rem;
+  text-transform: capitalize;
+}
+
+.pokemonName {
+  padding-right: 3rem;
+}
+
+.pokemonIndex {
+  font-size: 2rem;
+  padding-top: 0.3rem;
+}
+
+.primaryType,
+.secondaryType {
+  border: 1.5px solid black;
+  border-radius: 1.2rem;
+  padding: 0.3rem 1rem;
+  margin-right: 2rem;
+  width: 12rem;
+  text-align: center;
+  text-shadow: -0.5px 0.2px 0px white;
+}
+
+.pokemonSpriteContainer {
+  margin-top: 25px;
+  width: 100%;
 }

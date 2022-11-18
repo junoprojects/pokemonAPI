@@ -1,0 +1,11 @@
+@use "../variables" as v; 
+
+// =====================
+// PIKACHU STYLING
+// =====================
+
+.pikachuText {
+  transform: translateY(40px);
+  margin-left: 10rem;
+  padding-right: 3rem;
+}
