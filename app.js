@@ -1,6 +1,7 @@
 // Namespace object and API URL
 const pokeApp = {}
 const pokeUrl = "https://pokeapi.co/api/v2/pokemon/";
+const pokeSpecies = "https://pokeapi.co/api/v2/pokemon-species/"
 
 pokeApp.pokeTypeColor = {
     normal: "rgba(146, 157, 163, 0.6)",
@@ -33,8 +34,6 @@ pokeApp.getRandomPokemon = () => {
         // Combine the existing URL with the randomly generated number
         const newPokeUrl = pokeUrl + pokeApp.pokeNumber;
 
-
-
     // Fetch the URL specific to the Pokemon whose index number corresponds with the randomly generated number
     fetch(newPokeUrl)
     .then(res => {
@@ -45,6 +44,7 @@ pokeApp.getRandomPokemon = () => {
 
         // Remove pikachu display
         document.querySelector(".landingPage").style.display = "none";
+        document.querySelector(".pokemonInfo").style.display = "block";
 
         // Add a border to new pokemon display
         document.querySelector(".pokemonInfo").style.border = "2px solid #58585A";
@@ -106,6 +106,14 @@ pokeApp.getRandomPokemon = () => {
         const pokeSprite = document.querySelector(".pokemonSprite")
         pokeSprite.src = data.sprites.other['official-artwork'].front_default;
         pokeSprite.alt = data.name;
+
+        // const about = document.querySelector(".about");
+        // about.innerText = data.abilities[0].ability.name;
+
+        // const moves = document.querySelector(".moves");
+        // moves.innerText = data.moves[0].move.name;
+        
+
 
     })
     
