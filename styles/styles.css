@@ -326,10 +326,6 @@ body {
   line-height: 2.5rem;
 }
 
-.searchByNameOrId {
-  text-transform: lowercase;
-}
-
 header {
   background-image: url(../assets/header-background.jpg);
   background-size: cover;

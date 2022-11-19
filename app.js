@@ -3,6 +3,7 @@ const pokeApp = {}
 const pokeUrl = "https://pokeapi.co/api/v2/pokemon/";
 const pokeSpecies = "https://pokeapi.co/api/v2/pokemon-species/"
 
+// Pokemon type colors
 pokeApp.pokeTypeColor = {
     normal: "rgba(146, 157, 163, 0.6)",
     fire: "rgba(255, 157, 85, 0.7)",
@@ -24,12 +25,12 @@ pokeApp.pokeTypeColor = {
     fairy: "rgba(236, 143, 230, 0.7)"
 }
 
+// Generate a random Pokemon when the Pokeball is clicked
 pokeApp.getRandomPokemon = () => {
 
     // Create an event listener where a random number is generated when the button is clicked
     document.querySelector("#clickPokeball").addEventListener("click", () => {
         pokeApp.pokeNumber = Math.floor((Math.random() * 905) + 1);
-        // pokeApp.pokeNumber = 140;
 
         // Combine the existing URL with the randomly generated number
         const newPokeUrl = pokeUrl + pokeApp.pokeNumber;
@@ -40,8 +41,7 @@ pokeApp.getRandomPokemon = () => {
         return res.json();
     })
     .then(data => {
-        console.log(data)
-
+        console.log(data);
 
         // Remove pikachu display
         document.querySelector(".landingPage").style.display = "none";
@@ -100,8 +100,6 @@ pokeApp.getRandomPokemon = () => {
                 pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, white, ${pokeApp.secondBackground})`;
             }
         }
-        
-        
 
         // Append the Pokemon sprite in the img element
         const pokeSprite = document.querySelector(".pokemonSprite")
@@ -113,11 +111,8 @@ pokeApp.getRandomPokemon = () => {
 
         // const moves = document.querySelector(".moves");
         // moves.innerText = data.moves[0].move.name;
-        
-
 
     })
-    
     })
 }
 
@@ -125,30 +120,33 @@ pokeApp.getRandomPokemon();
 
 
 
+// Generate a Pokemon based on the user's search input
+pokeApp.searchForPokemon = () => {
 
-
-
-
-pokeApp.getPokemonById = () => {
-
-    // Create an event listener where a random number is generated when the button is clicked
+    // Create an event listener that fetches the URL corresponding to the user's search input on submission
     document.querySelector('[name="pokemonSearchForm"]').addEventListener("submit", (event) => {
         event.preventDefault();
+
         pokeApp.userIdInput = document.querySelector("input[name=pokemonNameOrId");
 
+        // If the user enters something into the search bar and submits the form, run the code below
         if(pokeApp.userIdInput.value) {
             
-            const idInputUrl = pokeUrl + pokeApp.userIdInput.value;
+            const idInputUrl = pokeUrl + pokeApp.userIdInput.value.toLowerCase();
 
-            // Fetch the URL specific to the Pokemon whose index number corresponds with the randomly generated number
+            // Fetch the URL specific to the Pokemon whose name or index number corresponds with value in the search bar
             fetch(idInputUrl)
             .then(res => {
-                return res.json();
+                if(res.ok) {
+                    return res.json();
+                } else {
+                    throw new Error("This call wasn't successful");
+                }
             })
             .then(data => {
                 console.log(data)
 
-                    // Remove pikachu display
+                // Remove pikachu display
                 document.querySelector(".landingPage").style.display = "none";
                 document.querySelector(".pokemonInfo").style.display = "block";
         
@@ -185,8 +183,8 @@ pokeApp.getPokemonById = () => {
                 }
         
                 pokeApp.getPokeTypes();
-        
-        
+
+
                 // Applying colors to span element corresponding to Pokemon type
                 const pokeInfo = document.querySelector(".pokemonInfo");
         
@@ -205,9 +203,7 @@ pokeApp.getPokemonById = () => {
                         pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, white, ${pokeApp.secondBackground})`;
                     }
                 }
-                
-                
-        
+
                 // Append the Pokemon sprite in the img element
                 const pokeSprite = document.querySelector(".pokemonSprite")
                 pokeSprite.src = data.sprites.other['official-artwork'].front_default;
@@ -218,17 +214,22 @@ pokeApp.getPokemonById = () => {
         
                 // const moves = document.querySelector(".moves");
                 // moves.innerText = data.moves[0].move.name;
-
+            })
+            .catch((err) => {
+                // If the user submits the form with an invalid Pokemon name or index number, display the alert below
+                alert("Please enter a valid Pokemon name or ID");
             })
         } else {
+            // If the user submits the form without entering anything into the search bar, display the alert below
             alert("Please enter a Pokemon name or ID");
         }
 
+        // Clear the search bar
         pokeApp.userIdInput.value = "";
     })
 }
 
-pokeApp.getPokemonById();
+pokeApp.searchForPokemon();
 
 
 
