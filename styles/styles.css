@@ -505,3 +505,18 @@ main .mainContainer {
   -ms-flex-item-align: center;
       align-self: center;
 }
+
+.pokemonStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pokemonStats .statContainer {
+  width: 33.3333333333%;
+  text-align: center;
+}

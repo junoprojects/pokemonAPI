@@ -106,6 +106,25 @@ pokeApp.getRandomPokemon = () => {
         pokeSprite.src = data.sprites.other['official-artwork'].front_default;
         pokeSprite.alt = data.name;
 
+        // Append the Pokemon stats
+        const pokeHp = document.querySelector(".hp");
+        pokeHp.innerText = data.stats[0].base_stat;
+
+        const pokeAttack = document.querySelector(".attack");
+        pokeAttack.innerText = data.stats[1].base_stat;
+
+        const pokeDefense = document.querySelector(".defense");
+        pokeDefense.innerText = data.stats[2].base_stat;
+
+        const pokeSpAttack = document.querySelector(".specialAttack");
+        pokeSpAttack.innerText = data.stats[3].base_stat;
+
+        const pokeSpDefense = document.querySelector(".specialDefense");
+        pokeSpDefense.innerText = data.stats[4].base_stat;
+
+        const pokeSpeed = document.querySelector(".speed");
+        pokeSpeed.innerText = data.stats[5].base_stat;
+
         // const about = document.querySelector(".about");
         // about.innerText = data.abilities[0].ability.name;
 
@@ -140,7 +159,7 @@ pokeApp.searchForPokemon = () => {
                 if(res.ok) {
                     return res.json();
                 } else {
-                    throw new Error("This call wasn't successful");
+                    throw new Error("Please enter a valid Pokemon name or ID");
                 }
             })
             .then(data => {
@@ -208,6 +227,25 @@ pokeApp.searchForPokemon = () => {
                 const pokeSprite = document.querySelector(".pokemonSprite")
                 pokeSprite.src = data.sprites.other['official-artwork'].front_default;
                 pokeSprite.alt = data.name;
+
+                // Append the Pokemon stats
+                const pokeHp = document.querySelector(".hp");
+                pokeHp.innerText = data.stats[0].base_stat;
+
+                const pokeAttack = document.querySelector(".attack");
+                pokeAttack.innerText = data.stats[1].base_stat;
+
+                const pokeDefense = document.querySelector(".defense");
+                pokeDefense.innerText = data.stats[2].base_stat;
+
+                const pokeSpAttack = document.querySelector(".specialAttack");
+                pokeSpAttack.innerText = data.stats[3].base_stat;
+
+                const pokeSpDefense = document.querySelector(".specialDefense");
+                pokeSpDefense.innerText = data.stats[4].base_stat;
+
+                const pokeSpeed = document.querySelector(".speed");
+                pokeSpeed.innerText = data.stats[5].base_stat;
         
                 // const about = document.querySelector(".about");
                 // about.innerText = data.abilities[0].ability.name;
@@ -217,7 +255,7 @@ pokeApp.searchForPokemon = () => {
             })
             .catch((err) => {
                 // If the user submits the form with an invalid Pokemon name or index number, display the alert below
-                alert("Please enter a valid Pokemon name or ID");
+                alert(err);
             })
         } else {
             // If the user submits the form without entering anything into the search bar, display the alert below

@@ -1,0 +1,16 @@
+@use "../variables" as v; 
+
+// ========================
+// POKEMON STATS
+// ========================
+
+.pokemonStats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .statContainer {
+      width: calc(100% / 3);
+      text-align: center;
+    }
+  }
+  
