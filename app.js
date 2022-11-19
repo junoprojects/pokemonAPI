@@ -42,6 +42,7 @@ pokeApp.getRandomPokemon = () => {
     .then(data => {
         console.log(data)
 
+
         // Remove pikachu display
         document.querySelector(".landingPage").style.display = "none";
         document.querySelector(".pokemonInfo").style.display = "block";
@@ -121,4 +122,114 @@ pokeApp.getRandomPokemon = () => {
 }
 
 pokeApp.getRandomPokemon();
+
+
+
+
+
+
+
+pokeApp.getPokemonById = () => {
+
+    // Create an event listener where a random number is generated when the button is clicked
+    document.querySelector('[name="pokemonSearchForm"]').addEventListener("submit", (event) => {
+        event.preventDefault();
+        pokeApp.userIdInput = document.querySelector("input[name=pokemonNameOrId");
+
+        if(pokeApp.userIdInput.value) {
+            
+            const idInputUrl = pokeUrl + pokeApp.userIdInput.value;
+
+            // Fetch the URL specific to the Pokemon whose index number corresponds with the randomly generated number
+            fetch(idInputUrl)
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data)
+
+                    // Remove pikachu display
+                document.querySelector(".landingPage").style.display = "none";
+                document.querySelector(".pokemonInfo").style.display = "block";
+        
+                // Add a border to new pokemon display
+                document.querySelector(".pokemonInfo").style.border = "2px solid #58585A";
+                document.querySelector(".nameAndIndex").style.border = "1.5px solid #58585A";
+        
+                // Append the Pokemon name in the h2 element with the .pokemonName class
+                const pokeName = document.querySelector(".pokemonName");
+                pokeName.innerText = data.name;
+        
+                // Append the Pokemon index number in the paragraph element with the .pokemonIndex class
+                const pokeIndex = document.querySelector(".pokemonIndex");
+                pokeIndex.innerText = `#${data.id}`;
+        
+                // Append the Pokemon type(s) in the paragraph element with the .pokemonTypes class
+                // The type from the first array will be appended within the span with the .primaryType class
+                // If the Pokemon has a secondary typing, the type from the second array will be appended within the span with the .secondaryType class
+                const pokeTypes = document.querySelector(".pokemonTypes");
+                const primType = document.createElement("span");
+                const secondType = document.createElement("span");
+        
+                pokeApp.getPokeTypes = () => {
+                    primType.classList.add("primaryType");
+                    pokeTypes.innerText = "";
+                    primType.innerText = data.types[0].type.name;
+                    pokeTypes.appendChild(primType);
+        
+                    if (data.types.length > 1) {
+                        secondType.classList.add("secondaryType");
+                        secondType.innerText = data.types[1].type.name;
+                        pokeTypes.appendChild(secondType);
+                    } 
+                }
+        
+                pokeApp.getPokeTypes();
+        
+        
+                // Applying colors to span element corresponding to Pokemon type
+                const pokeInfo = document.querySelector(".pokemonInfo");
+        
+                for (const type in pokeApp.pokeTypeColor) {
+                    if (type == primType.textContent) {
+                        primType.style.background = pokeApp.pokeTypeColor[type];
+                        pokeApp.primBackground = primType.style.background;
+                        pokeInfo.style.background = `linear-gradient(to right, #FBFBFB, ${pokeApp.primBackground})`;
+        
+                    } else if (type == secondType.textContent) {
+                        secondType.style.background = pokeApp.pokeTypeColor[type];
+                        pokeApp.secondBackground = secondType.style.background;
+                    }
+        
+                    if (data.types.length > 1) {
+                        pokeInfo.style.background = `linear-gradient(to right, ${pokeApp.primBackground}, white, ${pokeApp.secondBackground})`;
+                    }
+                }
+                
+                
+        
+                // Append the Pokemon sprite in the img element
+                const pokeSprite = document.querySelector(".pokemonSprite")
+                pokeSprite.src = data.sprites.other['official-artwork'].front_default;
+                pokeSprite.alt = data.name;
+        
+                // const about = document.querySelector(".about");
+                // about.innerText = data.abilities[0].ability.name;
+        
+                // const moves = document.querySelector(".moves");
+                // moves.innerText = data.moves[0].move.name;
+
+            })
+        } else {
+            alert("Please enter a Pokemon name or ID");
+        }
+
+        pokeApp.userIdInput.value = "";
+    })
+}
+
+pokeApp.getPokemonById();
+
+
+
 
