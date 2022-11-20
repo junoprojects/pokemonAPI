@@ -7,12 +7,12 @@
 .flexContainer {
   min-height: 60vh;
   display: flex;
-  
   justify-content: space-between;
   align-items: center;
   .searchContainer {
     width: 24%; 
     padding-left: 3rem;
+    
   }
   .pokemonContainer {
     width: 43%;
