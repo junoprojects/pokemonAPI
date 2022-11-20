@@ -34,9 +34,18 @@
 
     <div class="mainContainer wrapper">
 
-      <div class="flexContainer">
-        <!-- old: pokemonContainer ^ -->
+      <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
 
+        <label for="pokemonNameOrId">Search for Pokemon by Name or ID:</label>
+
+        <div class="buttonAndInput">
+          <button>Search</button>
+          <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId">
+        </div>
+      
+      </form>
+
+      <div class="flexContainer">
         <div class="pokeballContainer">
           <button id="clickPokeball">
             <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
@@ -44,17 +53,16 @@
         </div>
 
         <div class="pokemonContainer">
-          <!-- old: pokemon ^ -->
-          <ul class="landingPage">
-            <li class="pikachuText">
-              <h2>Click the pokeball</h2>
-              <h3>to find pokemon!</h3>
-            </li>
+          <div class="landingPage">
+            <div class="pikachuText">
+              <h2>Click the Pokeball</h2>
+              <h3>to Find Pokemon!</h3>
+            </div>
 
-            <li>
+            <div>
               <img src="./assets/pikachu-image.png" alt="An image of pikachu jumping up in excitement" class="pikachuImg">
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <div class="pokemonInfo"> <!-- START .pokemonInfo -->
             <div class="nameAndIndex">
@@ -70,7 +78,70 @@
             <div class="pokemonSpriteContainer">
                 <img class="pokemonSprite" src="" alt="">
             </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="pokemonStats">
+
+              <div class="hpContainer statContainer">
+                <i class="fa-solid fa-square-plus hpIcon"></i>
+
+                <div class="statNameAndValue">
+                  <h4>HP</h4>
+                  <p class="hp"><!-- HP stat --></p>
+                </div>
+              </div>
+
+              <div class="defenseContainer statContainer">
+                <i class="fa-solid fa-shield defenseIcon"></i>
+
+                <div class="statNameAndValue">
+                  <h4>Defense</h4>
+                  <p class="defense"><!-- Defense stat --></p>
+                </div>
+              </div>
+
+              <div class="speedContainer statContainer">
+                <i class="fa-solid fa-bolt speedIcon"></i>
+
+                <div class="statNameAndValue">
+                  <h4>Speed</h4>
+                  <p class="speed"><!-- Speed stat --></p>
+                </div>
+              </div>
+
+              <div class="attackContainer statContainer">
+                <i class="fa-solid fa-burst attackIcon"></i>
+
+                <div class="statNameAndValue">
+                  <h4>Attack</h4>
+                  <p class="attack"><!-- Attack stat --></p>
+                </div>
+              </div>
+
+            </div>
+            
+
         </div> <!-- END .pokemonInfo -->
+        </div>
+        
+        <div class="infoSection">
+          <h2 class="funFact">fun fact:</h2>
+
+          <div class="randomQuote">
+            <p class="about"></p>
+          </div>
+
+
+
+
         </div>
 
       </div> <!-- END flexContainer -->
@@ -81,6 +152,7 @@
 
   <!-- JavaScript link  -->
   <script src="./app.js"></script>
+  
   
 </body>
 </html>

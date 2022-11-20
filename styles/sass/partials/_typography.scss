@@ -7,10 +7,15 @@ html {
 
 body {
   font-family: v.$marhey;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.12rem;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+// Header
 .headerContainer {
   color: v.$blue;
   font-size: 3.3rem;
@@ -22,5 +27,37 @@ body {
   }
   .arrow {
     font-size: 4rem;
+  }
+}
+
+// Pikachu & Random pokemon section
+.pokemonInfo,
+.landingPage,
+.pikachuText {
+  text-align: center;
+}
+
+.nameAndIndex {
+  text-transform: capitalize;
+}
+.pokemonIndex {
+  font-size: 2rem;
+}
+.primaryType, 
+.secondaryType {
+  text-align: center;
+  text-shadow: -0.5px 0.2px 0px white;
+}
+
+// Fun fact info section
+.infoSection {
+  color: rgb(88, 88, 90);
+  .funFact {
+    color: rgb(239, 64, 54); 
+    text-shadow: 1px 0.2px 0px black;
+  }
+  .randomQuote {
+    font-family: v.$manrope;
+    line-height: 2.5rem;
   }
 }

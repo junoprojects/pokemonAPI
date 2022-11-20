@@ -5,23 +5,23 @@
 // ========================
 
 .pokemonInfo {
+  display: none;
   border-radius: 4.1rem;
-  text-align: center;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 1rem;
+  min-height: 55rem;
+  max-height: 55rem;
   // Name & index
   .nameAndIndex {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
     background-color: white;
     border-radius: 1.7rem;
     padding: 0.8rem 0 0.7rem;
-    text-transform: capitalize;
     .pokemonName {
       padding-right: 3rem;
     }
     .pokemonIndex {
-      font-size: 2rem;
       padding-top: 0.30rem;
     }
   }
@@ -33,12 +33,10 @@
     padding: 0.3rem 1rem;
     margin-right: 2rem;
     width: 12rem;
-    text-align: center;
-    text-shadow: -0.5px 0.2px 0px white;
   }
    // Pokemon sprite
   .pokemonSpriteContainer {
-    margin-top: 25px;
-    width: 100%;
+    padding-top: 3.5rem;
+    align-self: center;
   }
 }
