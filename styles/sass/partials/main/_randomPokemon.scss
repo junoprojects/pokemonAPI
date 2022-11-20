@@ -7,8 +7,9 @@
 .pokemonInfo {
   display: none;
   border-radius: 4.1rem;
-  padding: 2rem 4rem ;
-  min-height: 70vh;
+  padding: 2rem 4rem 1rem;
+  min-height: 55rem;
+  max-height: 55rem;
   // Name & index
   .nameAndIndex {
     display: flex;
