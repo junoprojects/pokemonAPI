@@ -4,15 +4,19 @@
 // POKEBALL BUTTON
 // ================
   .pokeballContainer { 
+    p {
+      margin-left: 2rem;
+    }
     #clickPokeball {
     background-color: v.$white;
     border: none;
     width: 65%;
-    margin-left: 8rem;
+    margin-left: 5rem;
     }
     .pokeball {
       max-width: 90%;
       padding-bottom: 2rem;
+      padding-top: 0.9rem;
       &:hover,
       &:focus {
         transform: scale(1.13);

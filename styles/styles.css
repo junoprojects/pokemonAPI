@@ -407,7 +407,7 @@ main {
   padding-top: 5rem;
   padding-bottom: 8rem;
   border-top: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 main .mainContainer {
   background-color: #FFF;
@@ -441,11 +441,12 @@ main .mainContainer {
           align-items: center;
 }
 .flexContainer .searchContainer {
-  width: 20%;
+  width: 25%;
+  padding-left: 4rem;
 }
 .flexContainer .pokemonContainer {
   width: 42%;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 .flexContainer .funFactContainer {
   width: 25%;
@@ -471,6 +472,7 @@ main .mainContainer {
           align-items: center;
   border: 2px solid black;
   width: 20rem;
+  margin-top: 0.3rem;
 }
 
 .searchButton {
@@ -517,18 +519,23 @@ main .mainContainer {
 }
 
 form {
-  width: 90%;
+  margin-left: 4rem;
+  padding-bottom: 6.5rem;
 }
 
+.pokeballContainer p {
+  margin-left: 2rem;
+}
 .pokeballContainer #clickPokeball {
   background-color: #FFF;
   border: none;
   width: 65%;
-  margin-left: 8rem;
+  margin-left: 5rem;
 }
 .pokeballContainer .pokeball {
   max-width: 90%;
   padding-bottom: 2rem;
+  padding-top: 0.9rem;
 }
 .pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
   -webkit-transform: scale(1.13);
