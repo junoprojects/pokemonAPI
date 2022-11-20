@@ -429,8 +429,7 @@ main .mainContainer {
 }
 
 .flexContainer {
-  min-height: 65rem;
-  max-height: 65rem;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,21 +440,84 @@ main .mainContainer {
       -ms-flex-align: center;
           align-items: center;
 }
-.flexContainer .pokeballContainer {
+.flexContainer .searchContainer {
   width: 20%;
 }
 .flexContainer .pokemonContainer {
-  width: 43%;
+  width: 42%;
   margin-left: 3rem;
-  padding: 5rem 0;
-  margin-top: 1rem;
 }
 .flexContainer .funFactContainer {
   width: 25%;
-  padding-right: 4.1rem;
+  padding-right: 4rem;
 }
 .flexContainer .funFactContainer h2 {
   padding-bottom: 3rem;
+}
+
+.buttonAndInput {
+  background: rgb(236, 233, 233);
+  height: 5.5rem;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  width: 20rem;
+}
+
+.searchButton {
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-left: -9rem;
+  color: white;
+  background: rgb(239, 64, 54);
+  cursor: pointer;
+}
+.searchButton:hover, .searchButton:focus {
+  opacity: 0.8;
+}
+
+.searchByNameOrId {
+  font-family: "Marhey", cursive;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  color: black;
+  background: none;
+  width: 22.5rem;
+}
+.searchByNameOrId::-webkit-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::-moz-placeholder {
+  color: black;
+}
+.searchByNameOrId:-ms-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::-ms-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::placeholder {
+  color: black;
+}
+
+.fa-magnifying-glass {
+  padding: 0.4rem;
+  margin: 0;
+}
+
+form {
+  width: 90%;
 }
 
 .pokeballContainer #clickPokeball {
