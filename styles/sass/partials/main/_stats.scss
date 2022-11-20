@@ -7,45 +7,35 @@
 .pokemonStats {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-  }
+}
 
 .statContainer {
     display: flex;
     justify-content: center;
-    width: 30%;
-    margin: 1rem 0;
-    font-size: 2rem;
+    width: 25%;
+    padding-top: 2.1rem;
+    margin-left: -2rem;
+    font-size: 1.3rem;
 }
 
 .fa-solid {
-    margin-right: 1rem;
+    padding-right: 0.4rem;
 }
 
-.specialAttackIcon, .specialDefenseIcon {
-    margin-right: -0.5rem;
+.statNameAndValue p {
+    padding-top: 0.5rem;
 }
 
-// .hpIcon {
-//     color: forestgreen;
-// }
+.speedIcon {
+    color: gold;
+}
 
-// .attackIcon {
-//     color: darkred;
-// }
+.specialAttackIcon {
+    color: coral;
+}
 
-// .defenseIcon {
-//     color: royalblue;
-// }
-
-// .speedIcon {
-//     color: gold;
-// }
-
-// .specialAttackIcon {
-//     color: coral;
-// }
-
-// .specialDefenseIcon {
-//     color: slateblue;
-// }
+.specialDefenseIcon {
+    color: slateblue;
+}

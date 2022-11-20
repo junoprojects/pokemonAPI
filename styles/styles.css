@@ -253,7 +253,7 @@ html {
 }
 
 img {
-  max-width: 80%;
+  max-width: 75%;
 }
 
 h1, h2, h3, div, p, ul {
@@ -443,7 +443,8 @@ main .mainContainer {
   background-image: -webkit-gradient(linear, left top, right top, from(#FBFBFB), to(rgba(244, 210, 60, 0.7)));
   background-image: linear-gradient(to right, #FBFBFB, rgba(244, 210, 60, 0.7));
   border: 2px solid #58585A;
-  min-height: 70vh;
+  min-height: 60rem;
+  max-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,8 +476,9 @@ main .mainContainer {
 .pokemonInfo {
   display: none;
   border-radius: 4.1rem;
-  padding: 2rem 4rem;
-  min-height: 70vh;
+  padding: 2rem 4rem 1rem;
+  min-height: 55rem;
+  max-height: 55rem;
 }
 .pokemonInfo .nameAndIndex {
   display: -webkit-box;
@@ -517,6 +519,9 @@ main .mainContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -528,17 +533,30 @@ main .mainContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 30%;
-  margin: 1rem 0;
-  font-size: 2rem;
+  width: 25%;
+  padding-top: 2.1rem;
+  margin-left: -2rem;
+  font-size: 1.3rem;
 }
 
 .fa-solid {
-  margin-right: 1rem;
+  padding-right: 0.4rem;
 }
 
-.specialAttackIcon, .specialDefenseIcon {
-  margin-right: -0.5rem;
+.statNameAndValue p {
+  padding-top: 0.5rem;
+}
+
+.speedIcon {
+  color: gold;
+}
+
+.specialAttackIcon {
+  color: coral;
+}
+
+.specialDefenseIcon {
+  color: slateblue;
 }
 
 .buttonAndInput {
