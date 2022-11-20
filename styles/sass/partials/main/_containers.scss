@@ -5,7 +5,8 @@
 // POKEBALL / POKEMON FLEX CONTAINER
 // =================================
 .flexContainer {
-  min-height: 60vh;
+  min-height: 65rem;
+  max-height: 65rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,10 +16,11 @@
   .pokemonContainer {
     width: 42%;
     margin-left: 3rem;
+    padding: 5rem 0;
   }
   .infoSection  {
     width: 25%;
-    padding-right: 4rem;
+    padding-right: 4.1rem;
     h2 {
       padding-bottom: 3rem;
     }

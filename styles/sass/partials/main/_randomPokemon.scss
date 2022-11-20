@@ -5,6 +5,7 @@
 // ========================
 
 .pokemonInfo {
+  border: 0.2rem solid #58585A;
   display: none;
   border-radius: 4.1rem;
   padding: 2rem 4rem 1rem;
@@ -12,9 +13,10 @@
   max-height: 55rem;
   // Name & index
   .nameAndIndex {
+    border: 0.15rem solid #58585A;
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 2.5rem;
     background-color: white;
     border-radius: 1.7rem;
     padding: 0.8rem 0 0.7rem;
@@ -40,3 +42,4 @@
     align-self: center;
   }
 }
+

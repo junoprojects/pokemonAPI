@@ -247,7 +247,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 90%;
 }
@@ -256,7 +256,7 @@ img {
   max-width: 75%;
 }
 
-h1, h2, h3, div, p, ul {
+h1, h2, h3, div, p, ul, footer {
   margin: 0;
   padding: 0;
 }
@@ -300,7 +300,8 @@ h1, h2, h3, h4 {
 
 .pokemonInfo,
 .landingPage,
-.pikachuText {
+.pikachuText,
+footer {
   text-align: center;
 }
 
@@ -330,6 +331,10 @@ h1, h2, h3, h4 {
   line-height: 2.5rem;
 }
 
+footer {
+  font-size: 1.5rem;
+}
+
 header {
   background-image: url(../assets/header-background.jpg);
   background-size: cover;
@@ -344,10 +349,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 7rem 0;
+  padding: 2rem 0;
+  border-bottom: 2px solid black;
 }
 header .headerContainer {
-  min-height: 80vh;
+  min-height: 65rem;
+  max-height: 65rem;
   background-color: rgb(255, 255, 255);
   border: 5px solid rgb(20, 20, 20);
   border-radius: 50px;
@@ -364,15 +371,13 @@ header .headerContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5rem 0;
 }
 header .headerContainer .banner {
   max-width: 70%;
 }
 header .headerContainer .arrow {
-  position: absolute;
-  bottom: 10%;
-  padding-bottom: 3rem;
+  position: relative;
+  top: 5rem;
 }
 
 main {
@@ -382,25 +387,43 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8rem 0;
+  margin: 2rem auto;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border: 2px solid black;
 }
 main .mainContainer {
   background-color: #FFF;
   -webkit-box-shadow: -1px 1px 23px 9px #B7B7B7;
           box-shadow: -1px 1px 23px 9px #B7B7B7;
-  min-height: 80vh;
+  min-height: 60rem;
+  max-height: 60rem;
   border-radius: 50px;
-  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
 }
 
 .flexContainer {
-  min-height: 60vh;
+  min-height: 65rem;
+  max-height: 65rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,10 +440,11 @@ main .mainContainer {
 .flexContainer .pokemonContainer {
   width: 42%;
   margin-left: 3rem;
+  padding: 5rem 0;
 }
 .flexContainer .infoSection {
   width: 25%;
-  padding-right: 4rem;
+  padding-right: 4.1rem;
 }
 .flexContainer .infoSection h2 {
   padding-bottom: 3rem;
@@ -431,10 +455,14 @@ main .mainContainer {
   border: none;
   width: 65%;
   margin-left: 8rem;
-  padding-top: 25px;
 }
 .pokeballContainer .pokeball {
-  max-width: 100%;
+  max-width: 90%;
+  padding-bottom: 2rem;
+}
+.pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
 }
 
 .landingPage {
@@ -443,8 +471,8 @@ main .mainContainer {
   background-image: -webkit-gradient(linear, left top, right top, from(#FBFBFB), to(rgba(244, 210, 60, 0.7)));
   background-image: linear-gradient(to right, #FBFBFB, rgba(244, 210, 60, 0.7));
   border: 2px solid #58585A;
-  min-height: 60rem;
-  max-height: 60rem;
+  min-height: 55rem;
+  max-height: 55rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,6 +502,7 @@ main .mainContainer {
 }
 
 .pokemonInfo {
+  border: 0.2rem solid #58585A;
   display: none;
   border-radius: 4.1rem;
   padding: 2rem 4rem 1rem;
@@ -481,13 +510,14 @@ main .mainContainer {
   max-height: 55rem;
 }
 .pokemonInfo .nameAndIndex {
+  border: 0.15rem solid #58585A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 2.5rem;
   background-color: white;
   border-radius: 1.7rem;
   padding: 0.8rem 0 0.7rem;
@@ -513,6 +543,7 @@ main .mainContainer {
 }
 
 .pokemonStats {
+  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,6 +555,9 @@ main .mainContainer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  bottom: 7.5rem;
+  padding-top: 2.5rem;
 }
 
 .statContainer {
@@ -534,7 +568,6 @@ main .mainContainer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 25%;
-  padding-top: 2.1rem;
   margin-left: -2rem;
   font-size: 1.3rem;
 }
@@ -545,4 +578,44 @@ main .mainContainer {
 
 .statNameAndValue p {
   padding-top: 0.5rem;
+}
+
+footer {
+  background-color: rgba(239, 64, 54, 0.87);
+  min-height: 20vh;
+  padding: 1.5rem 0;
+  border-top: 2px solid black;
+  color: white;
+}
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  width: 20%;
+  margin: 1rem auto;
+  color: black;
+}
+footer .footerContainer .and {
+  padding: 0 3rem;
+}
+footer .footerContainer .students {
+  padding: 1rem 0;
+}
+footer .footerContainer i {
+  padding: 0.5rem;
+}
+
+.footerArrow {
+  position: relative;
+  top: 7rem;
+  left: 58rem;
+  font-size: 3rem;
 }
