@@ -143,7 +143,7 @@ pokeApp.getRandomPokemon = () => {
         .then(data => {
             console.log(data)
             
-            pokeApp.displayQuote = document.querySelector('.about');
+            pokeApp.displayQuote = document.querySelector('.quote');
 
           // code here - filter array 
         pokeApp.writeQuotes = data.flavor_text_entries.filter( (english) => {

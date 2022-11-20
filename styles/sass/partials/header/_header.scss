@@ -21,13 +21,17 @@ header {
     align-items: center;
     justify-content: center; 
     .banner {
-      max-width: 70%;
+      max-width: 72%;
+      padding-top: 2.4rem;
     }
     .arrow {
       position: relative;
       top: 5rem;
-      // bottom: 5%;
-      // padding-bottom: 3rem;
+      font-size: 5rem;
+      &:hover,
+      &:focus {
+        transform: scale(1.13);
+      }
     }
   }
 }

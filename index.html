@@ -15,7 +15,11 @@
 </head>
 <body>
 
+      <!-- Skip Link for accessiblity purposes -->
+      <a href="#main" class="skipLink">Skip to main content</a>
 
+
+  <!-- HEADER -->
   <header>
     <div class="headerContainer wrapper">
       <h1>
@@ -24,19 +28,17 @@
 
       <img src="./assets/pokemon-banner.svg.png" alt="Banner that spells the word Pokemon" class="banner">
 
-      <a href="#main"><i class="fa-solid fa-chevron-down arrow"></i></a>
+      <a href="#main"><i class="fa-solid fa-circle-down arrow"></i></a>
     </div>
-    
   </header> 
 
 
+  <!-- MAIN -->
   <main id="main">
-    <a href="#footer"><i class="fa-solid fa-laptop-code footerArrow"></i></a>
 
     <div class="mainContainer wrapper">
-
       <div class="flexContainer">
-
+        <!-- Pokeball -->
         <div class="pokeballContainer">
           <button id="clickPokeball">
             <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
@@ -44,7 +46,8 @@
         </div>
 
         <div class="pokemonContainer">
-          <div class="landingPage">
+          <!-- Homepage Pikachu -->
+          <div class="landingPage"> 
             <div class="pikachuText">
               <h2>Click the Pokeball</h2>
               <h3>to Find Pokemon!</h3>
@@ -53,15 +56,16 @@
             <div>
               <img src="./assets/pikachu-image.png" alt="An image of pikachu jumping up in excitement" class="pikachuImg">
             </div>
-          </div>
+          </div> 
 
 
-          <div class="pokemonInfo"> <!-- START .pokemonInfo -->
+          <!-- Pokemon display -->
+          <div class="pokemonInfo"> 
+              <!-- Randomly generated pokemon info & images will display here -->
+          </div> 
 
-          
-          </div> <!-- END .pokemonInfo -->
+          <!-- Pokemon statistics -->
           <div class="pokemonStats">
-  
             <div class="hpContainer statContainer">
               <i class="fa-solid fa-square-plus hpIcon"></i>
 
@@ -97,27 +101,23 @@
                 <p class="attack"><!-- Attack stat --></p>
               </div>
             </div>
-
           </div>
 
-
-
-
-        </div>
+        </div> <!-- END .pokemonContainer -->
         
         
-        <div class="infoSection">
+        <!-- Fun fact section -->
+        <div class="funFactContainer">
           <h2 class="funFact">Fun Fact:</h2>
 
           <div class="randomQuote">
-            <p class="about"></p>
+            <p class="quote"></p>
           </div>
         </div>
-
       </div> <!-- END flexContainer -->
-
     </div> <!-- END .mainContainer .wrapper -->
 
+    <!-- <a href="#footer" title="Meet the app creators"><i class="fa-solid fa-laptop-code footerArrow"></i></a> -->
 
   </main>
 
@@ -144,7 +144,7 @@
       </div>
     </div>
     
-    <p>At Juno College 2022</p>
+    <p>Copyright © Made at <a href="https://junocollege.com/">Juno College </a> using the <a href="https://pokeapi.co/"> Poké API</a></p> 
     </footer>
 
 
