@@ -280,6 +280,10 @@ body {
   letter-spacing: 0.12rem;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .headerContainer {
   color: #3264B0;
   font-size: 3.3rem;
@@ -510,13 +514,53 @@ main .mainContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.pokemonStats .statContainer {
-  width: 33.3333333333%;
-  text-align: center;
+
+.statContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.fa-solid {
+  margin-right: 1rem;
+}
+
+.specialAttackIcon, .specialDefenseIcon {
+  margin-right: -0.5rem;
+}
+
+.hpIcon {
+  color: forestgreen;
+}
+
+.attackIcon {
+  color: darkred;
+}
+
+.defenseIcon {
+  color: royalblue;
+}
+
+.speedIcon {
+  color: gold;
+}
+
+.specialAttackIcon {
+  color: coral;
+}
+
+.specialDefenseIcon {
+  color: slateblue;
 }
