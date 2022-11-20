@@ -243,26 +243,403 @@ html {
 }
 
 html {
-  font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
-  width: 90%;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 75%;
 }
 
-@media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+h1, h2, h3, div, p, ul, footer {
+  margin: 0;
+  padding: 0;
 }
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
+
+ul {
+  list-style: none;
 }
-@media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Marhey", cursive;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+.headerContainer {
+  color: #3264B0;
+  font-size: 3.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.headerContainer h1 {
+  text-shadow: -4px 1px 0px #FFCC00;
+}
+.headerContainer .arrow {
+  font-size: 4rem;
+}
+
+.pokemonInfo,
+.landingPage,
+.pikachuText,
+footer {
+  text-align: center;
+}
+
+.nameAndIndex {
+  text-transform: capitalize;
+}
+
+.pokemonIndex {
+  font-size: 2rem;
+}
+
+.primaryType,
+.secondaryType {
+  text-align: center;
+  text-shadow: -0.5px 0.2px 0px white;
+}
+
+.funFactContainer {
+  color: rgb(88, 88, 90);
+}
+.funFactContainer .funFact {
+  color: rgb(239, 64, 54);
+  text-shadow: 1px 0.2px 0px black;
+}
+.funFactContainer .randomQuote {
+  font-family: "Manrope", sans-serif;
+  line-height: 2.5rem;
+}
+
+footer {
+  font-size: 1.5rem;
+}
+
+header {
+  background-image: url(../assets/header-background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid black;
+}
+header .headerContainer {
+  min-height: 65rem;
+  max-height: 65rem;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(20, 20, 20);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .headerContainer .banner {
+  max-width: 72%;
+  padding-top: 2.4rem;
+}
+header .headerContainer .arrow {
+  position: relative;
+  top: 5rem;
+  font-size: 5rem;
+}
+header .headerContainer .arrow:hover, header .headerContainer .arrow:focus {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+
+main {
+  background-image: url(../assets/main-background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border-top: 2px solid black;
+  border-top: 2px solid black;
+}
+main .mainContainer {
+  background-color: #FFF;
+  -webkit-box-shadow: -1px 1px 23px 9px #B7B7B7;
+          box-shadow: -1px 1px 23px 9px #B7B7B7;
+  min-height: 60rem;
+  max-height: 60rem;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.flexContainer {
+  min-height: 65rem;
+  max-height: 65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexContainer .pokeballContainer {
+  width: 20%;
+}
+.flexContainer .pokemonContainer {
+  width: 43%;
+  margin-left: 3rem;
+  padding: 5rem 0;
+  margin-top: 1rem;
+}
+.flexContainer .funFactContainer {
+  width: 25%;
+  padding-right: 4.1rem;
+}
+.flexContainer .funFactContainer h2 {
+  padding-bottom: 3rem;
+}
+
+.pokeballContainer #clickPokeball {
+  background-color: #FFF;
+  border: none;
+  width: 65%;
+  margin-left: 8rem;
+}
+.pokeballContainer .pokeball {
+  max-width: 90%;
+  padding-bottom: 2rem;
+}
+.pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+
+.landingPage {
+  border-radius: 4.1rem;
+  padding: 2rem 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FBFBFB), to(rgba(244, 210, 60, 0.7)));
+  background-image: linear-gradient(to right, #FBFBFB, rgba(244, 210, 60, 0.7));
+  border: 2px solid #58585A;
+  min-height: 55rem;
+  max-height: 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.pikachuText {
+  background-color: white;
+  border-radius: 1.7rem;
+  padding: 1.5rem 2rem 1rem;
+  border: 1.5px solid #58585A;
+}
+
+.pikachuImg {
+  margin-left: 5.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pokemonInfo {
+  border: 0.2rem solid #58585A;
+  display: none;
+  border-radius: 4.1rem;
+  padding: 2rem 4rem 1rem;
+  min-height: 55rem;
+  max-height: 55rem;
+}
+.pokemonInfo .nameAndIndex {
+  border: 0.15rem solid #58585A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 1.7rem;
+  padding: 0.8rem 0 0.7rem;
+}
+.pokemonInfo .nameAndIndex .pokemonName {
+  padding-right: 3rem;
+}
+.pokemonInfo .nameAndIndex .pokemonIndex {
+  padding-top: 0.3rem;
+}
+.pokemonInfo .primaryType,
+.pokemonInfo .secondaryType {
+  border: 1.5px solid black;
+  border-radius: 1.2rem;
+  padding: 0.3rem 1rem;
+  margin-right: 2rem;
+  width: 12rem;
+}
+.pokemonInfo .pokemonSpriteContainer {
+  padding-top: 3.5rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.pokemonStats {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  bottom: 7.5rem;
+  padding-top: 2.5rem;
+}
+
+.statContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  margin-left: -2rem;
+  font-size: 1.3rem;
+}
+
+.fa-solid {
+  padding-right: 0.4rem;
+}
+
+.statNameAndValue p {
+  padding-top: 0.5rem;
+}
+
+footer {
+  background-color: rgb(239, 64, 54);
+  min-height: 20vh;
+  padding: 1.5rem 0;
+  border-top: 2px solid black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  width: 30rem;
+  margin: 1rem auto;
+  color: black;
+  text-shadow: none;
+}
+footer .footerContainer .and {
+  padding: 0 3rem;
+}
+footer .footerContainer .students {
+  padding: 1.2rem 0;
+}
+footer .footerContainer i {
+  padding: 0.5rem;
+}
+
+footer p {
+  min-width: 5rem;
+}
+
+footer a:hover, footer a:focus {
+  color: black;
 }

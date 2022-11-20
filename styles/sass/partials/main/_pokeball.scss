@@ -1,0 +1,21 @@
+@use "../variables" as v; 
+
+// ================
+// POKEBALL BUTTON
+// ================
+  .pokeballContainer { 
+    #clickPokeball {
+    background-color: v.$white;
+    border: none;
+    width: 65%;
+    margin-left: 8rem;
+    }
+    .pokeball {
+      max-width: 90%;
+      padding-bottom: 2rem;
+      &:hover,
+      &:focus {
+        transform: scale(1.13);
+    }
+  }
+}

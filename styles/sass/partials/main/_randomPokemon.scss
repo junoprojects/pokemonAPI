@@ -1,0 +1,45 @@
+@use "../variables" as v; 
+
+// ========================
+// RANDOMLY DISPLAY POKEMON
+// ========================
+
+.pokemonInfo {
+  border: 0.2rem solid #58585A;
+  display: none;
+  border-radius: 4.1rem;
+  padding: 2rem 4rem 1rem;
+  min-height: 55rem;
+  max-height: 55rem;
+  // Name & index
+  .nameAndIndex {
+    border: 0.15rem solid #58585A;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    border-radius: 1.7rem;
+    padding: 0.8rem 0 0.7rem;
+    .pokemonName {
+      padding-right: 3rem;
+    }
+    .pokemonIndex {
+      padding-top: 0.30rem;
+    }
+  }
+  // Pokemon types
+  .primaryType, 
+  .secondaryType {
+    border: 1.5px solid black;
+    border-radius: 1.2rem;
+    padding: 0.3rem 1rem;
+    margin-right: 2rem;
+    width: 12rem;
+  }
+   // Pokemon sprite
+  .pokemonSpriteContainer {
+    padding-top: 3.5rem;
+    align-self: center;
+  }
+}
+

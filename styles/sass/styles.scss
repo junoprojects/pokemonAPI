@@ -1,6 +1,23 @@
+// SETUP AND GLOABL PARTIALS 
 @use "./partials/setup";
-@use "./partials/variables";
-@use "./partials/typography";
 @use "./partials/global";
+@use "./partials/variables" as v;
+@use "./partials/typography";
 
-@use "./partials/mediaQs";
+// HEADER SECTION
+@use "./partials/header/header";
+
+// MAIN SECTION
+@use "./partials/main/mainGeneral";
+@use './partials/main/containers';
+@use "./partials/main/pokeball";
+@use "./partials/main/pikachuLandingPage";
+@use "./partials/main/randomPokemon";
+@use "./partials/main/stats";
+
+// FOOTER SECTION
+@use "./partials/footer/footer";
+
+
+// MEDIA QUERIES 
+// @use "./partials/mediaQs";

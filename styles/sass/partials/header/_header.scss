@@ -1,0 +1,37 @@
+@use "../variables" as v;
+
+header {
+  background-image: url(../assets/header-background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid black;
+  .headerContainer {
+    min-height: 65rem;
+    max-height: 65rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: 5px solid rgb(20, 20, 20);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    .banner {
+      max-width: 72%;
+      padding-top: 2.4rem;
+    }
+    .arrow {
+      position: relative;
+      top: 5rem;
+      font-size: 5rem;
+      &:hover,
+      &:focus {
+        transform: scale(1.13);
+      }
+    }
+  }
+}

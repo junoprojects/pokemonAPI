@@ -5,17 +5,152 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 2</title>
+
+  <!-- CSS style sheet -->
   <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Manrope:wght@300;400;700&family=Marhey:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome icons -->
+  <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <h1>setup</h1>
+      <!-- Skip Link for accessiblity purposes -->
+      <a href="#main" class="skipLink">Skip to main content</a>
 
+
+  <!-- HEADER -->
+  <header>
+    <div class="headerContainer wrapper">
+      <h1>
+        Who's that
+      </h1>
+
+      <img src="./assets/pokemon-banner.svg.png" alt="Banner that spells the word Pokemon" class="banner">
+
+      <a href="#main"><i class="fa-solid fa-circle-down arrow"></i></a>
+    </div>
+  </header> 
+
+
+  <!-- MAIN -->
+  <main id="main">
+
+    <div class="mainContainer wrapper">
+      <div class="flexContainer">
+        <!-- Pokeball -->
+        <div class="pokeballContainer">
+          <button id="clickPokeball">
+            <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
+          </button>    
+        </div>
+
+        <div class="pokemonContainer">
+          <!-- Homepage Pikachu -->
+          <div class="landingPage"> 
+            <div class="pikachuText">
+              <h2>Click the Pokeball</h2>
+              <h3>to Find Pokemon!</h3>
+            </div>
+
+            <div>
+              <img src="./assets/pikachu-image.png" alt="An image of pikachu jumping up in excitement" class="pikachuImg">
+            </div>
+          </div> 
+
+
+          <!-- Pokemon display -->
+          <div class="pokemonInfo"> 
+              <!-- Randomly generated pokemon info & images will display here -->
+          </div> 
+
+          <!-- Pokemon statistics -->
+          <div class="pokemonStats">
+            <div class="hpContainer statContainer">
+              <i class="fa-solid fa-square-plus hpIcon"></i>
+
+              <div class="statNameAndValue">
+                <h4>HP</h4>
+                <p class="hp"><!-- HP stat --></p>
+              </div>
+            </div>
+
+            <div class="defenseContainer statContainer">
+              <i class="fa-solid fa-shield defenseIcon"></i>
+
+              <div class="statNameAndValue">
+                <h4>Defense</h4>
+                <p class="defense"><!-- Defense stat --></p>
+              </div>
+            </div>
+
+            <div class="speedContainer statContainer">
+              <i class="fa-solid fa-bolt speedIcon"></i>
+
+              <div class="statNameAndValue">
+                <h4>Speed</h4>
+                <p class="speed"><!-- Speed stat --></p>
+              </div>
+            </div>
+
+            <div class="attackContainer statContainer">
+              <i class="fa-solid fa-burst attackIcon"></i>
+
+              <div class="statNameAndValue">
+                <h4>Attack</h4>
+                <p class="attack"><!-- Attack stat --></p>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- END .pokemonContainer -->
+        
+        
+        <!-- Fun fact section -->
+        <div class="funFactContainer">
+          <h2 class="funFact">Fun Fact:</h2>
+
+          <div class="randomQuote">
+            <p class="quote"></p>
+          </div>
+        </div>
+      </div> <!-- END flexContainer -->
+    </div> <!-- END .mainContainer .wrapper -->
+
+    <!-- <a href="#footer" title="Meet the app creators"><i class="fa-solid fa-laptop-code footerArrow"></i></a> -->
+
+  </main>
+
+  <footer id="footer">
+    <h3>Created by:</h3>
+    
+    <div class="footerContainer wrapper">
+      <div class="students">
+        <h4>Rebecca</h4>
+        <div class="footerIcons">
+          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+        </div>
+    
+      </div>
+    
+      <p class="and">&</p>
+    
+      <div class="students">
+        <h4>Thomas</h4>
+        <div class="footerIcons">
+          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+        </div>
+    
+      </div>
+    </div>
+    
+    <p>Copyright © Made at <a href="https://junocollege.com/">Juno College </a> using the <a href="https://pokeapi.co/"> Poké API</a></p> 
+    </footer>
 
 
 
   <!-- JavaScript link  -->
   <script src="./app.js"></script>
-  
+
 </body>
 </html>

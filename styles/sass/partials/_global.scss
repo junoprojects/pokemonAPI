@@ -1,12 +1,29 @@
-@use "./variables";
+@use "./variables" as v;
+
+html {
+  scroll-behavior: smooth;
+}
 
 .wrapper {
-  width: 90%; 
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 75%;
+}
+
+h1, h2, h3, div, p, ul, footer {
+  margin: 0; 
+  padding: 0
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,0 +1,35 @@
+@use "../variables" as v; 
+
+// ========================
+// POKEMON STATS
+// ========================
+
+.pokemonStats {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 7.5rem;
+    padding-top: 2.5rem;
+}
+
+.statContainer {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin-left: -2rem;
+    font-size: 1.3rem;
+}
+
+.fa-solid {
+    padding-right: 0.4rem;
+}
+
+.statNameAndValue p {
+    padding-top: 0.5rem;
+
+}
+
+

@@ -1,0 +1,34 @@
+@use "../variables" as v; 
+
+// =====================
+// PIKACHU STYLING
+// =====================
+
+.landingPage {
+  border-radius: 4.1rem;
+  padding: 2rem 4rem;
+  background-image: linear-gradient(to right, #FBFBFB, rgba(244, 210, 60, 0.7));
+  border: 2px solid #58585A;
+  min-height: 55rem;
+  max-height: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.pikachuText {
+  background-color: white;
+  border-radius: 1.7rem;
+  padding: 1.5rem 2rem 1rem;
+  border: 1.5px solid #58585A;
+
+}
+
+.pikachuImg {
+  // max-width: 70%;
+  margin-left: 5.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

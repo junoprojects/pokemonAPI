@@ -1,0 +1,30 @@
+@use "../variables" as v; 
+
+
+// =================================
+// POKEBALL / POKEMON FLEX CONTAINER
+// =================================
+.flexContainer {
+  min-height: 65rem;
+  max-height: 65rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .pokeballContainer {
+    width: 20%; 
+  }
+  .pokemonContainer {
+    width: 43%;
+    margin-left: 3rem;
+    padding: 5rem 0;
+    margin-top: 1rem;
+  }
+  .funFactContainer  {
+    width: 25%;
+    padding-right: 4.1rem;
+    h2 {
+      padding-bottom: 3rem;
+    }
+  }
+} 
+

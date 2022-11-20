@@ -1,0 +1,60 @@
+@use "../variables" as v;
+
+
+
+
+footer {
+  background-color: v.$red;
+  min-height: 20vh;
+  padding: 1.5rem 0;
+  border-top: 2px solid black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    width: 30rem;
+    margin: 1rem auto;
+    color: black;
+    text-shadow: none;
+    .and {
+      padding: 0 3rem;
+    }
+    .students {
+      padding: 1.2rem 0;
+    }
+    i {
+      padding: 0.5rem;
+    }
+  }
+}
+
+// .footerArrow {
+//   padding-top: 1rem;
+//   font-size: 3rem;
+//   align-self: flex-end;
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.13);
+//     color: v.$red;
+// }
+// }
+
+
+footer p {
+  min-width: 5rem;
+}
+
+footer a {
+
+  &:hover,
+  &:focus {
+    color: black;
+}
+}
