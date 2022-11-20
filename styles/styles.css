@@ -407,7 +407,7 @@ main {
   padding-top: 5rem;
   padding-bottom: 8rem;
   border-top: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 main .mainContainer {
   background-color: #FFF;
@@ -429,8 +429,7 @@ main .mainContainer {
 }
 
 .flexContainer {
-  min-height: 65rem;
-  max-height: 65rem;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,32 +440,102 @@ main .mainContainer {
       -ms-flex-align: center;
           align-items: center;
 }
-.flexContainer .pokeballContainer {
-  width: 20%;
+.flexContainer .searchContainer {
+  width: 25%;
+  padding-left: 4rem;
 }
 .flexContainer .pokemonContainer {
-  width: 43%;
-  margin-left: 3rem;
-  padding: 5rem 0;
-  margin-top: 1rem;
+  width: 42%;
+  margin-left: 1rem;
 }
 .flexContainer .funFactContainer {
   width: 25%;
-  padding-right: 4.1rem;
+  padding-right: 4rem;
 }
 .flexContainer .funFactContainer h2 {
   padding-bottom: 3rem;
 }
 
+.buttonAndInput {
+  background: rgb(236, 233, 233);
+  height: 5.5rem;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid black;
+  width: 20rem;
+  margin-top: 0.3rem;
+}
+
+.searchButton {
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-left: -9rem;
+  color: white;
+  background: rgb(239, 64, 54);
+  cursor: pointer;
+}
+.searchButton:hover, .searchButton:focus {
+  opacity: 0.8;
+}
+
+.searchByNameOrId {
+  font-family: "Marhey", cursive;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  color: black;
+  background: none;
+  width: 22.5rem;
+}
+.searchByNameOrId::-webkit-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::-moz-placeholder {
+  color: black;
+}
+.searchByNameOrId:-ms-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::-ms-input-placeholder {
+  color: black;
+}
+.searchByNameOrId::placeholder {
+  color: black;
+}
+
+.fa-magnifying-glass {
+  padding: 0.4rem;
+  margin: 0;
+}
+
+form {
+  margin-left: 4rem;
+  padding-bottom: 6.5rem;
+}
+
+.pokeballContainer p {
+  margin-left: 2rem;
+}
 .pokeballContainer #clickPokeball {
   background-color: #FFF;
   border: none;
   width: 65%;
-  margin-left: 8rem;
+  margin-left: 5rem;
 }
 .pokeballContainer .pokeball {
   max-width: 90%;
   padding-bottom: 2rem;
+  padding-top: 0.9rem;
 }
 .pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
   -webkit-transform: scale(1.13);

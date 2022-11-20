@@ -38,19 +38,32 @@
 
     <div class="mainContainer wrapper">
       <div class="flexContainer">
-        <!-- Pokeball -->
-        <div class="pokeballContainer">
-          <button id="clickPokeball">
-            <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
-          </button>    
+
+        <div class="searchContainer">
+          <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
+            
+            <label for="pokemonNameOrId">Search for Pokemon!</label>
+            
+            <div class="buttonAndInput">
+              <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId" placeholder="Name or ID #">
+              <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+          
+          <div class="pokeballContainer">
+            <p>Find a random Pokemon!</p>
+            <button id="clickPokeball">
+              <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
+            </button>    
+          </div>
         </div>
 
         <div class="pokemonContainer">
           <!-- Homepage Pikachu -->
           <div class="landingPage"> 
             <div class="pikachuText">
-              <h2>Click the Pokeball</h2>
-              <h3>to Find Pokemon!</h3>
+              <h2>To find pokemon,</h2>
+              <h3>Click the pokeball or use search!</h3>
             </div>
 
             <div>
@@ -107,13 +120,14 @@
         
         
         <!-- Fun fact section -->
-        <div class="funFactContainer">
+        <div class="funFactContainer hide">
           <h2 class="funFact">Fun Fact:</h2>
 
           <div class="randomQuote">
-            <p class="quote"></p>
+            <p class="quote">With so many pokemon these days, its easy to see one and wonder: who’s that pokemon? Use this app to learn more about them! Click the poke ball to find a random pokemon. Enter a pokemon name or number in the search bar to find a specific one. </p>
           </div>
         </div>
+
       </div> <!-- END flexContainer -->
     </div> <!-- END .mainContainer .wrapper -->
 
@@ -150,7 +164,8 @@
 
 
   <!-- JavaScript link  -->
-  <script src="./app.js"></script>
+  <script src="./pokemon.js"></script>
+
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+@use "../variables" as v; 
+
+// =====================
+// SEARCH BAR
+// =====================
+
+.buttonAndInput {
+    background: rgb(236, 233, 233);
+    // border: 1px solid black;
+    // width: 20rem;
+    height: 5.5rem;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    width: 20rem;
+    margin-top: 0.3rem;
+}
+
+.searchButton {
+    // border: 1px solid red;
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem;
+    margin-left: -9rem;
+    color: white;
+    background: rgb(239, 64, 54);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
+.searchByNameOrId {
+    font-family: v.$marhey;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    color: black;
+    background: none;
+    width: 22.5rem;
+    
+    &::placeholder {
+        color: black;
+    }
+}
+
+.fa-magnifying-glass {
+    padding: 0.4rem;
+    margin: 0;
+}
+
+form {
+    margin-left: 4rem;
+    padding-bottom: 6.5rem;
+}
+
