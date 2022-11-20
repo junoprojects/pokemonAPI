@@ -33,7 +33,8 @@ h1, h2, h3, h4 {
 // Pikachu & Random pokemon section
 .pokemonInfo,
 .landingPage,
-.pikachuText {
+.pikachuText,
+footer {
   text-align: center;
 }
 
@@ -60,4 +61,8 @@ h1, h2, h3, h4 {
     font-family: v.$manrope;
     line-height: 2.5rem;
   }
+}
+
+footer {
+  font-size: 1.5rem;
 }

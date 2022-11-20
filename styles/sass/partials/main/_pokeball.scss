@@ -9,9 +9,13 @@
     border: none;
     width: 65%;
     margin-left: 8rem;
-    padding-top: 25px;
     }
     .pokeball {
-      max-width: 100%;
+      max-width: 90%;
+      padding-bottom: 2rem;
+      &:hover,
+      &:focus {
+        transform: scale(1.13);
     }
   }
+}

@@ -31,21 +31,12 @@
 
 
   <main id="main">
+    <a href="#footer"><i class="fa-solid fa-laptop-code footerArrow"></i></a>
 
     <div class="mainContainer wrapper">
 
-      <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
-
-        <label for="pokemonNameOrId">Search for Pokemon by Name or ID:</label>
-
-        <div class="buttonAndInput">
-          <button>Search</button>
-          <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId">
-        </div>
-      
-      </form>
-
       <div class="flexContainer">
+
         <div class="pokeballContainer">
           <button id="clickPokeball">
             <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
@@ -64,95 +55,102 @@
             </div>
           </div>
 
+
           <div class="pokemonInfo"> <!-- START .pokemonInfo -->
-            <div class="nameAndIndex">
-                <h2 class="pokemonName"></h2>
-                <p class="pokemonIndex"></p>
+
+          
+          </div> <!-- END .pokemonInfo -->
+          <div class="pokemonStats">
+  
+            <div class="hpContainer statContainer">
+              <i class="fa-solid fa-square-plus hpIcon"></i>
+
+              <div class="statNameAndValue">
+                <h4>HP</h4>
+                <p class="hp"><!-- HP stat --></p>
+              </div>
             </div>
 
-            <p class="pokemonTypes">
-                <!-- <span>Primary Pokemon type will go here</span> -->
-                <!-- <span>Secondary Pokemon type will go here</span> -->
-            </p>
+            <div class="defenseContainer statContainer">
+              <i class="fa-solid fa-shield defenseIcon"></i>
 
-            <div class="pokemonSpriteContainer">
-                <img class="pokemonSprite" src="" alt="">
+              <div class="statNameAndValue">
+                <h4>Defense</h4>
+                <p class="defense"><!-- Defense stat --></p>
+              </div>
             </div>
 
+            <div class="speedContainer statContainer">
+              <i class="fa-solid fa-bolt speedIcon"></i>
 
-
-
-
-
-
-
-
-
-            <div class="pokemonStats">
-
-              <div class="hpContainer statContainer">
-                <i class="fa-solid fa-square-plus hpIcon"></i>
-
-                <div class="statNameAndValue">
-                  <h4>HP</h4>
-                  <p class="hp"><!-- HP stat --></p>
-                </div>
+              <div class="statNameAndValue">
+                <h4>Speed</h4>
+                <p class="speed"><!-- Speed stat --></p>
               </div>
-
-              <div class="defenseContainer statContainer">
-                <i class="fa-solid fa-shield defenseIcon"></i>
-
-                <div class="statNameAndValue">
-                  <h4>Defense</h4>
-                  <p class="defense"><!-- Defense stat --></p>
-                </div>
-              </div>
-
-              <div class="speedContainer statContainer">
-                <i class="fa-solid fa-bolt speedIcon"></i>
-
-                <div class="statNameAndValue">
-                  <h4>Speed</h4>
-                  <p class="speed"><!-- Speed stat --></p>
-                </div>
-              </div>
-
-              <div class="attackContainer statContainer">
-                <i class="fa-solid fa-burst attackIcon"></i>
-
-                <div class="statNameAndValue">
-                  <h4>Attack</h4>
-                  <p class="attack"><!-- Attack stat --></p>
-                </div>
-              </div>
-
             </div>
-            
 
-        </div> <!-- END .pokemonInfo -->
-        </div>
-        
-        <div class="infoSection">
-          <h2 class="funFact">fun fact:</h2>
+            <div class="attackContainer statContainer">
+              <i class="fa-solid fa-burst attackIcon"></i>
 
-          <div class="randomQuote">
-            <p class="about"></p>
+              <div class="statNameAndValue">
+                <h4>Attack</h4>
+                <p class="attack"><!-- Attack stat --></p>
+              </div>
+            </div>
+
           </div>
 
 
 
 
         </div>
+        
+        
+        <div class="infoSection">
+          <h2 class="funFact">Fun Fact:</h2>
+
+          <div class="randomQuote">
+            <p class="about"></p>
+          </div>
+        </div>
 
       </div> <!-- END flexContainer -->
 
     </div> <!-- END .mainContainer .wrapper -->
+
+
   </main>
+
+  <footer id="footer">
+    <h3>Created by:</h3>
+    
+    <div class="footerContainer wrapper">
+      <div class="students">
+        <h4>Rebecca</h4>
+        <div class="footerIcons">
+          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+        </div>
+    
+      </div>
+    
+      <p class="and">&</p>
+    
+      <div class="students">
+        <h4>Thomas</h4>
+        <div class="footerIcons">
+          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+        </div>
+    
+      </div>
+    </div>
+    
+    <p>At Juno College 2022</p>
+    </footer>
+
 
 
   <!-- JavaScript link  -->
   <script src="./app.js"></script>
-  
-  
+
 </body>
 </html>

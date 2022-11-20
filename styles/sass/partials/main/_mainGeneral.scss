@@ -8,14 +8,22 @@ main {
   background-size: cover;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0;
+  margin: 2rem auto;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border: 2px solid black;
   .mainContainer {
     background-color: v.$white;  
     box-shadow: -1px 1px 23px 9px v.$greyShadow;
-    min-height: 80vh;
+    min-height: 60rem;
+    max-height: 60rem;
     border-radius: 50px;
-    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
   }
 }
