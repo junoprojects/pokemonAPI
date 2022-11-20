@@ -34,22 +34,31 @@
 
     <div class="mainContainer wrapper">
 
-      <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
-
-        <label for="pokemonNameOrId">Search for Pokemon by Name or ID</label>
-
-        <div class="buttonAndInput">
-          <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId" placeholder="Type to search">
-          <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
       
-      </form>
-
+      
       <div class="flexContainer">
-        <div class="pokeballContainer">
-          <button id="clickPokeball">
-            <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
-          </button>    
+        <div class="searchContainer">
+          <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
+            
+            <label for="pokemonNameOrId">Search for Pokemon!</label>
+            
+            <div class="buttonAndInput">
+              <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId" placeholder="Name or ID">
+              <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+
+          </form>
+
+
+          
+          <div class="pokeballContainer">
+            <p>Find a random Pokemon!</p>
+            <button id="clickPokeball">
+              <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
+            </button>    
+          </div>
+  
         </div>
 
         <div class="pokemonContainer">

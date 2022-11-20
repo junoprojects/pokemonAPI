@@ -5,21 +5,25 @@
 // =====================
 
 .buttonAndInput {
-    background: lightgrey;
-    width: 30rem;
+    background: rgb(236, 233, 233);
+    // border: 1px solid black;
+    // width: 20rem;
     height: 5.5rem;
     border-radius: 5rem;
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid black;
+    width: 20rem;
 }
 
 .searchButton {
+    // border: 1px solid red;
     border: none;
     border-radius: 50%;
     padding: 0.75rem;
-    margin-right: 0.5rem;
+    margin-left: -9rem;
     color: white;
     background: rgb(239, 64, 54);
     cursor: pointer;
@@ -47,4 +51,10 @@
 .fa-magnifying-glass {
     padding: 0.4rem;
     margin: 0;
+    // border: 2px solid yellow;
+}
+
+form {
+    // border: 2px solid purple;
+    width: 90%;
 }
