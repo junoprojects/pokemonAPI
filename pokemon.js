@@ -168,7 +168,9 @@ pokeApp.getRandomPokemon = () => {
 
 
 
-
+// ==========
+// SEARCH FOR POKEMON
+// ===========
 
   // Generate a Pokemon based on the user's search input
 const pokeUrl = "https://pokeapi.co/api/v2/pokemon/";
@@ -185,9 +187,9 @@ pokeApp.searchForPokemon = () => {
         // If the user enters something into the search bar and submits the form, run the code below
         if(pokeApp.userIdInput.value) {
 
-          const userChoice = pokeApp.userIdInput.value.toLowerCase();          
-          const idInputUrl = pokeUrl + userChoice;
-          const factsUrl = pokeSpecies + userChoice;
+        const userChoice = pokeApp.userIdInput.value.toLowerCase();          
+        const idInputUrl = pokeUrl + userChoice;
+        const factsUrl = pokeSpecies + userChoice;
 
             // Fetch the URL specific to the Pokemon whose name or index number corresponds with value in the search bar
             fetch(idInputUrl)

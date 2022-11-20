@@ -441,25 +441,29 @@ main .mainContainer {
           align-items: center;
 }
 .flexContainer .searchContainer {
-  width: 25%;
-  padding-left: 4rem;
+  width: 24%;
+  padding-left: 3rem;
 }
 .flexContainer .pokemonContainer {
-  width: 42%;
-  margin-left: 1rem;
+  width: 43%;
+  margin-left: 2.1rem;
 }
 .flexContainer .funFactContainer {
-  width: 25%;
-  padding-right: 4rem;
+  width: 27%;
+  padding-right: 3rem;
+  padding-left: 1rem;
 }
 .flexContainer .funFactContainer h2 {
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .buttonAndInput {
   background: rgb(236, 233, 233);
-  height: 5.5rem;
+  border: 2px solid black;
   border-radius: 5rem;
+  height: 5.5rem;
+  width: 20rem;
+  margin-top: 0.3rem;
   padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,9 +474,6 @@ main .mainContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
-  width: 20rem;
-  margin-top: 0.3rem;
 }
 
 .searchButton {
@@ -519,8 +520,8 @@ main .mainContainer {
 }
 
 form {
-  margin-left: 4rem;
-  padding-bottom: 6.5rem;
+  margin-left: 2rem;
+  padding-bottom: 10rem;
 }
 
 .pokeballContainer p {
@@ -530,7 +531,7 @@ form {
   background-color: #FFF;
   border: none;
   width: 65%;
-  margin-left: 5rem;
+  margin-left: 3.1rem;
 }
 .pokeballContainer .pokeball {
   max-width: 90%;
@@ -538,8 +539,8 @@ form {
   padding-top: 0.9rem;
 }
 .pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
-  -webkit-transform: scale(1.13);
-          transform: scale(1.13);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .landingPage {
@@ -577,6 +578,15 @@ form {
   margin-left: 5.1rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.welcome {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.italics {
+  font-style: italic;
 }
 
 .pokemonInfo {

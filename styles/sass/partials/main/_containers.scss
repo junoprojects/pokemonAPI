@@ -11,18 +11,19 @@
   justify-content: space-between;
   align-items: center;
   .searchContainer {
-    width: 25%; 
-    padding-left: 4rem;
+    width: 24%; 
+    padding-left: 3rem;
   }
   .pokemonContainer {
-    width: 42%;
-    margin-left: 1rem;
+    width: 43%;
+    margin-left: 2.1rem;
   }
   .funFactContainer  {
-    width: 25%;
-    padding-right: 4rem;
+    width: 27%;
+    padding-right: 3rem;
+    padding-left: 1rem;
     h2 {
-      padding-bottom: 3rem;
+      padding-bottom: 1.5rem;
     }
   }
 } 
