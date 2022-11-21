@@ -534,6 +534,7 @@ form {
   border: none;
   width: 65%;
   margin-left: 1.6rem;
+  cursor: pointer;
 }
 .pokeballContainer .pokeball {
   max-width: 85%;
