@@ -1,0 +1,42 @@
+@use "../variables" as v;
+
+@media (max-width: 700px) {
+
+  // General
+  img {
+    max-width: 75%;
+  }
+  .pokemonContainer {
+    min-width: 65%;
+  }
+
+  // Header
+  header {
+    h1 {
+      font-size: 1.8em;
+    }
+    .headerContainer {
+      min-height: 50rem;
+      max-height: 50rem;
+    }
+  }
+
+  // Search bar
+  form {
+    padding-right: 5rem;
+  }
+
+  // Footer
+  footer {
+    font-size: 1.3rem;
+    h3 {
+      font-size: 1.4rem;
+    }
+    .footerContainer {
+      width: 250px;
+      .students {
+        padding: 10px 0 5px;
+      }
+    }
+  }
+}

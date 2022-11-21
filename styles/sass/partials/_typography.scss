@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
   text-align: center;
   h1 {
     text-shadow: -4px 1px 0px v.$yellow;
+    padding-bottom: 1.5rem;
   }
   .arrow {
     font-size: 4rem;
@@ -38,6 +39,7 @@ footer {
   text-align: center;
 }
 
+// Pokemon information
 .nameAndIndex {
   text-transform: capitalize;
 }
@@ -50,19 +52,20 @@ footer {
   text-shadow: -0.5px 0.2px 0px white;
 }
 
-// Fun fact info section
+// Fun fact section
 .funFactContainer {
   color: rgb(88, 88, 90);
   .funFact {
     color: rgb(239, 64, 54); 
-    text-shadow: 1px 0.2px 0px black;
   }
   .randomQuote {
     font-family: v.$manrope;
     line-height: 2.5rem;
+    font-size: 1.6rem;
   }
 }
 
+// Footer
 footer {
   font-size: 1.5rem;
 }

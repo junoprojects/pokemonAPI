@@ -1,0 +1,74 @@
+@use "../variables" as v;
+
+@media (max-width: 800px) {
+  // General
+  img {
+    max-width: 75%;
+  }
+
+  // Header
+  header {
+    .headerContainer {
+      min-height: 53rem;
+      max-height: 53rem;
+    }
+  }
+
+  // Main
+  main {
+    .mainContainer {
+      max-height: 85rem;
+    }
+  }
+  
+  // Containers
+  .flexContainer {
+    flex-direction: column;
+    min-height: 60rem;
+    .funFactContainer {
+      width: 80%;
+      padding-bottom: 4rem;
+      padding-top: 0;
+      text-align: center;
+      margin-top: -3rem;
+    }
+    .pokemonContainer {
+      width: 60%;
+      padding-bottom: 0;
+    }
+  }
+
+  // Search bar
+  form {
+    padding-bottom: 0;
+    padding-right: 10rem;
+  }
+  .searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+  }
+  
+  // Pokeball
+  .pokeballContainer {
+    .pokeballP {
+      min-width: 25rem;
+      padding-bottom: 0.2rem;
+    }
+    .clickPokeball {
+      max-width: 10rem;
+      padding-left: 3rem;
+      margin-left: 2rem;
+    }
+    .pokeball {
+      padding-top: 0rem;
+    }
+    margin-right: -8rem;
+  }
+
+  // Fun fact
+  .funFactContainer {
+    min-height: 20rem;
+  }
+}

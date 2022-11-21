@@ -1,0 +1,22 @@
+@use "../variables" as v;
+
+@media (max-width: 600px) {
+  // Header
+  header {
+    .headerContainer {
+      min-height: 46rem;
+      max-height: 46rem;
+    }
+  }
+  
+  // Pokemon container 
+  .pokemonContainer {
+    min-width: 75%;
+    padding-right: 1.5rem;
+  }
+
+  // serch bar
+  form {
+    padding-right: 3rem;
+  }
+}

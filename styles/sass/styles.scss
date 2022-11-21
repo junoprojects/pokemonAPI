@@ -21,4 +21,12 @@
 
 
 // MEDIA QUERIES 
-// @use "./partials/mediaQs";
+@use "./partials/mediaQueries/width1000s";
+@use "./partials/mediaQueries/width900s";
+@use "./partials/mediaQueries/width800s";
+@use "./partials/mediaQueries/width700s";
+@use "./partials/mediaQueries/width600s";
+@use "./partials/mediaQueries/width500s";
+@use "./partials/mediaQueries/width400s";
+@use "./partials/mediaQueries/width300s";
+
