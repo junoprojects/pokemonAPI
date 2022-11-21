@@ -1,0 +1,82 @@
+@use "../variables" as v;
+
+@media (max-width: 550px) {
+  // General
+  h1 {
+    font-size: 1.7em;
+  }
+  img {
+    max-width: 80%;
+  }
+
+  // Pikachu
+  .pikachuText {
+    padding: 20px 10px;
+  }
+
+  // Pokemon
+  .pokemonInfo {
+    .pokemonName,
+    .pokemonIndex {
+      font-size: 1.7rem;
+    }
+    .primaryType,
+    .secondaryType {
+      font-size: 1.3rem;
+    }
+  }
+
+  // Search bar
+  label {
+    font-size: 1.4rem;
+  }
+
+  // Pokeball
+  .pokeballContainer {
+    margin-right: 0;
+    min-width: 150px;
+    .clickPokeball {
+      margin-left: 0;
+    }
+    .pokeballP {
+      font-size: 1.4rem;
+      min-width: 150px;
+    }
+  }
+  // Containers
+  .flexContainer {
+    .searchContainer {
+      padding-left: 0rem;
+    }
+  }
+}
+
+// ================================================
+// Media query @ 500px begins
+// ================================================
+
+@media (max-width: 500px) {
+  // General
+  img {
+    max-width: 83%;
+  }
+  // Header
+  header {
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+  // Pikachu
+  .welcome {
+    padding-bottom: 1rem;
+  }
+  // Container
+  .pokemonContainer {
+    min-width: 85%;
+    
+  }
+  //Fun fact
+  .funFact {
+    font-size: 1.8rem
+  }
+}

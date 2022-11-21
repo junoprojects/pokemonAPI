@@ -5,14 +5,14 @@
 // POKEBALL / POKEMON FLEX CONTAINER
 // =================================
 .flexContainer {
-  min-height: 60vh;
+  min-height: 60rem;
   display: flex;
-  
   justify-content: space-between;
   align-items: center;
   .searchContainer {
     width: 24%; 
     padding-left: 3rem;
+    
   }
   .pokemonContainer {
     width: 43%;

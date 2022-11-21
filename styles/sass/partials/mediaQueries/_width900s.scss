@@ -1,0 +1,36 @@
+@use "../variables" as v;
+
+@media (max-width: 925px) {
+  .landingPage,
+  .pokemonInfo {
+    min-height: 43rem;
+    max-height: 43rem;
+  }
+
+  // Search bar
+  form {
+    margin-left: 0;
+    padding-bottom: 10rem;
+  }
+  .buttonAndInput {
+    height: 4.2rem;
+  }
+  .searchButton {
+    padding: 0.25rem;
+  }
+
+  // Pokeball
+  .pokeballContainer { 
+    p {
+      margin-left: 0;
+    }
+    .clickPokeball {
+    margin-left: 0rem;
+    }
+  }
+
+  // Fun fact
+  .randomQuote p {
+    font-size: 1.3rem;
+  }
+}

@@ -15,8 +15,8 @@
 </head>
 <body>
 
-      <!-- Skip Link for accessiblity purposes -->
-      <a href="#main" class="skipLink">Skip to main content</a>
+  <!-- Skip Link for accessiblity purposes -->
+  <a href="#main" class="skipLink">Skip to main content</a>
 
 
   <!-- HEADER -->
@@ -35,24 +35,25 @@
 
   <!-- MAIN -->
   <main id="main">
-
     <div class="mainContainer wrapper">
       <div class="flexContainer">
 
         <div class="searchContainer">
           <form action="#" method="#" class="pokemonSearchForm" name="pokemonSearchForm">
             
-            <label for="pokemonNameOrId">Search for Pokemon!</label>
+            <label for="pokemonNameOrId">Pick a Pokemon!</label>
             
             <div class="buttonAndInput">
               <input type="text" id="pokemonNameOrId" name="pokemonNameOrId" class="searchByNameOrId" placeholder="Name or ID #">
-              <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
           </form>
           
           <div class="pokeballContainer">
-            <p>Find a random Pokemon!</p>
-            <button id="clickPokeball">
+            <p class="pokeballP">Random Pokemon!</p>
+            <button id="clickPokeball" class="clickPokeball">
               <img src="./assets/pokeball-image.png" alt="An image of a pokeball" class="pokeball">
             </button>    
           </div>
@@ -62,8 +63,8 @@
           <!-- Homepage Pikachu -->
           <div class="landingPage"> 
             <div class="pikachuText">
-              <h2>To find pokemon,</h2>
-              <h3>Click the pokeball or use search!</h3>
+              <h2 class="findPokemon">Welcome</h2>
+              <h3>Let's Find Pokemon!</h3>
             </div>
 
             <div>
@@ -126,23 +127,19 @@
           <div class="randomQuote">
             <p class="quote">
             <span class="welcome">
-              With so many Pokemon these days, its easy to see one and wonder: <span class="italics">who’s that Pokemon?</span> 
+              With so many Pokemon these days, its easy to wonder: <span class="italics">who’s that Pokemon?</span> 
             </span>  
             <span class="welcome">
-              Use this app to learn more about them!
+              Use this app to learn about them!
             </span>  
             
             <span class="welcome">
-              Click the poke ball to find random Pokemon. Enter a Pokemon name or number in the search bar to find a specific one. 
+              Click the pokeball to find random Pokemon. Enter a Pokemon name or number in the search bar to find a specific one. 
             </span> </p>
           </div>
         </div>
-
       </div> <!-- END flexContainer -->
     </div> <!-- END .mainContainer .wrapper -->
-
-    <!-- <a href="#footer" title="Meet the app creators"><i class="fa-solid fa-laptop-code footerArrow"></i></a> -->
-
   </main>
 
   <footer id="footer">
@@ -152,9 +149,9 @@
       <div class="students">
         <h4>Rebecca</h4>
         <div class="footerIcons">
-          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+          <a href="https://github.com/rebecca-romeo"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rebeccaromeo/"><i class="fa-brands fa-linkedin"></i></a>         
         </div>
-    
       </div>
     
       <p class="and">&</p>
@@ -162,20 +159,16 @@
       <div class="students">
         <h4>Thomas</h4>
         <div class="footerIcons">
-          <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+          <a href="https://github.com/TTH25N "><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/thomas-huynh-567050194/"><i class="fa-brands fa-linkedin"></i></a>         
         </div>
-    
       </div>
     </div>
     
     <p>Copyright © Made at <a href="https://junocollege.com/">Juno College </a> using the <a href="https://pokeapi.co/"> Poké API</a></p> 
     </footer>
 
-
-
   <!-- JavaScript link  -->
-  <script src="./pokemon.js"></script>
-
-
-</body>
+  <script src="./app.js"></script>
+  </body>
 </html>

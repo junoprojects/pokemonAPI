@@ -1,0 +1,186 @@
+@use "../variables" as v;
+
+@media (max-width: 1180px) {
+  // General
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  img {
+    max-width: 83%;
+  }
+
+  // Header
+  header {
+    .headerContainer {
+      min-height: 61rem;
+      max-height: 61rem;
+      }
+  }
+
+  // Pikachu display
+  .landingPage {
+    min-height: 50rem;
+    max-height: 50rem;
+  }
+  
+
+  // Pokemon display
+  .pokemonInfo {
+    min-height: 50rem;
+    max-height: 50rem;
+    .pokemonSpriteContainer {
+      padding-top: 3rem;
+    }
+  }
+
+  // Pokemon type 
+  .primaryType, 
+  .secondaryType {
+    font-size: 1.7rem;
+  }
+
+  // Search bar
+  form {
+    margin-left: 1rem;
+    padding-bottom: 12rem;
+    .searchByNameOrId {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .buttonAndInput {
+    height: 5rem;
+    width: 18rem;
+  }
+
+  .searchButton {
+    padding: 0.55rem;
+  }
+
+  // Pokeball 
+  .pokeballContainer { 
+    p {
+      margin-left: 1rem;
+    }
+    .clickPokeball {
+    width: 65%;
+    margin-left: 1.4rem;
+    }
+  }
+
+  // Fun fact section
+  .funFactContainer {
+    .randomQuote {
+      font-size: 1.5rem;
+      p {
+        line-height: 2.3rem;
+      }
+    }
+  }
+}
+
+// =====================================
+// Media query @ 1050px begins
+// =====================================
+
+@media (max-width: 1050px) {
+  // Header
+  header {
+    .headerContainer {
+      min-height: 57rem;
+      max-height: 57rem;
+      font-size: 3rem;
+      .banner {
+        min-width: 85%;
+      }
+      .arrow {
+        font-size: 3.5rem;
+        }
+      }
+    }
+
+  // Pikachu & pokemon container height
+  .landingPage,
+  .pokemonInfo {
+    min-height: 47rem;
+    max-height: 47rem;
+  }
+
+  // Pokemon stats
+  .statContainer {
+    font-size: 1.2rem;
+    width: 25%;
+  }
+  .pokemonStats {
+    bottom: 8rem;
+    padding: 3rem 1.3rem 0;
+  }
+}
+
+// =====================================
+// Media query @ 1005px begins
+// =====================================
+@media (max-width: 1005px ) {
+
+ // General
+  img {
+    max-width: 87%;
+  }
+  .pokeballContainer p,
+  label {
+    font-size: 1.6rem;
+  }
+
+// Search bar
+  form {
+    margin-left: 1rem;
+    padding-bottom: 12rem;
+    .searchByNameOrId {
+      font-size: 1.4rem;
+    }
+  }
+  .buttonAndInput {
+    height: 5rem;
+    width: 16rem;
+  }
+  .searchButton {
+    padding: 0.40rem;
+    margin-left: -3.1rem;
+  }
+
+// Pikachu
+  .pikachuText {
+    padding: 1.5rem 3rem 1rem;
+  }
+
+// Pokemon info
+  .pokemonInfo {
+    .nameAndIndex {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+  .pokemonName {
+    padding-top: 0.3rem;
+    font-size: 2rem;
+  }
+  .pokemonIndex {
+    font-size: 1.9rem;
+  }
+  .primaryType,
+  .secondaryType {
+    font-size: 1.5rem;
+  }
+
+  // Fun fact section
+  .funFact {
+    font-size: 2.1rem;
+  }
+  .randomQuote p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
