@@ -7,14 +7,14 @@
     p {
       margin-left: 2rem;
     }
-    #clickPokeball {
+    .clickPokeball {
     background-color: v.$white;
     border: none;
     width: 65%;
-    margin-left: 3.1rem;
+    margin-left: 1.6rem;
     }
     .pokeball {
-      max-width: 90%;
+      max-width: 85%;
       padding-bottom: 2rem;
       padding-top: 0.9rem;
       &:hover,

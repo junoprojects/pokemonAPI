@@ -1,0 +1,46 @@
+@use "../variables" as v;
+
+@media (max-width: 420px) {
+
+  .pokemonInfo {
+    min-height: 40rem;
+    max-height: 40rem;
+  }
+
+  // Search bar
+  .searchContainer {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    .searchByNameOrId {
+      font-size: 1.2rem;
+    }
+    .buttonAndInput {
+      padding: 3px;
+      width: 14rem;
+    }
+    .searchButton {
+      padding: 0.19rem;
+      margin-left: -4rem;
+    }
+  }
+
+  // Pokeball
+  .pokeballContainer {
+    .pokeball {
+      max-width: 78%;
+    }
+  }
+
+  // Containers
+  .flexContainer {
+    .pokemonContainer {
+      width: 90%;
+      margin: 0;
+      padding-right: 0;
+    }
+  }
+
+  .statContainer {
+    font-size: 11px;
+  }
+}
