@@ -377,6 +377,8 @@ header .headerContainer .arrow {
   position: relative;
   top: 4rem;
   font-size: 5rem;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
 }
 header .headerContainer .arrow:hover, header .headerContainer .arrow:focus {
   -webkit-transform: scale(1.13);
@@ -540,6 +542,8 @@ form {
   max-width: 85%;
   padding-bottom: 2rem;
   padding-top: 0.9rem;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
 }
 .pokeballContainer .pokeball:hover, .pokeballContainer .pokeball:focus {
   -webkit-transform: scale(1.08);
@@ -725,7 +729,7 @@ footer p {
 }
 
 footer a:hover, footer a:focus {
-  color: black;
+  opacity: 0.8;
 }
 
 @media (max-width: 1180px) {
@@ -754,7 +758,7 @@ footer a:hover, footer a:focus {
     padding-top: 3rem;
   }
   .primaryType,
-.secondaryType {
+  .secondaryType {
     font-size: 1.7rem;
   }
   form {
@@ -798,7 +802,7 @@ footer a:hover, footer a:focus {
     font-size: 3.5rem;
   }
   .landingPage,
-.pokemonInfo {
+  .pokemonInfo {
     min-height: 47rem;
     max-height: 47rem;
   }
@@ -816,7 +820,7 @@ footer a:hover, footer a:focus {
     max-width: 87%;
   }
   .pokeballContainer p,
-label {
+  label {
     font-size: 1.6rem;
   }
   form {
@@ -849,7 +853,7 @@ label {
     font-size: 1.9rem;
   }
   .primaryType,
-.secondaryType {
+  .secondaryType {
     font-size: 1.5rem;
   }
   .funFact {
@@ -862,7 +866,7 @@ label {
 }
 @media (max-width: 925px) {
   .landingPage,
-.pokemonInfo {
+  .pokemonInfo {
     min-height: 43rem;
     max-height: 43rem;
   }
@@ -1004,11 +1008,11 @@ label {
     padding: 20px 10px;
   }
   .pokemonInfo .pokemonName,
-.pokemonInfo .pokemonIndex {
+  .pokemonInfo .pokemonIndex {
     font-size: 1.7rem;
   }
   .pokemonInfo .primaryType,
-.pokemonInfo .secondaryType {
+  .pokemonInfo .secondaryType {
     font-size: 1.3rem;
   }
   label {
@@ -1096,7 +1100,7 @@ label {
     padding-right: 15px;
   }
   .pokeballContainer .pokeballP,
-label {
+  label {
     font-size: 1.2rem;
   }
   .flexContainer .searchContainer {
@@ -1150,7 +1154,7 @@ label {
     padding: 0.8rem 0.8rem 0.7rem;
   }
   .pokemonInfo .pokemonName,
-.pokemonInfo .pokemonIndex {
+  .pokemonInfo .pokemonIndex {
     font-size: 1.5rem;
   }
   .flexContainer .funFactContainer {

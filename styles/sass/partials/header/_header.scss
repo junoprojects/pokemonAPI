@@ -24,6 +24,7 @@ header {
       position: relative;
       top: 4rem;
       font-size: 5rem;
+      transition: all 100ms ease;
       &:hover,
       &:focus {
         transform: scale(1.13);
